@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/conf/aem-integrated-spa/settings/wcm/templates/(?!xf-).*]"
+        cq:conf="/conf/aem-integrated-spa"
+        cq:redirectTarget="/content/aem-integrated-spa/us/en/home"
+        cq:template="/conf/aem-integrated-spa/settings/wcm/templates/spa-app-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="aem-integrated-spa"
+        sling:configRef="/conf/aem-integrated-spa"
+        sling:redirect="{Boolean}true"
+        sling:redirectStatus="{Long}302"
+        sling:resourceType="aem-integrated-spa/components/page">
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+    <us/>
+</jcr:root>
